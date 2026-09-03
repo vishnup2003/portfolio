@@ -26,6 +26,36 @@ radial-gradient(circle at 20% 20%, rgba(56,189,248,0.15), transparent 25%),
 radial-gradient(circle at 80% 30%, rgba(139,92,246,0.15), transparent 25%);
 }
 
+.navbar{
+position:sticky;
+top:0;
+z-index:1000;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+background:rgba(15,23,42,0.9);
+backdrop-filter:blur(10px);
+border-bottom:1px solid rgba(56,189,248,0.2);
+}
+
+.logo{
+font-size:1.2rem;
+font-weight:bold;
+color:#38bdf8;
+}
+
+.nav-links a{
+margin-left:20px;
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
+
+.nav-links a:hover{
+color:#38bdf8;
+}
+
 .hero{
 min-height:100vh;
 display:flex;
@@ -57,6 +87,7 @@ box-shadow:0 0 40px rgba(56,189,248,0.8);
 .hero h1{
 font-size:4rem;
 margin-bottom:10px;
+text-shadow:0 0 20px rgba(56,189,248,0.6);
 }
 
 .hero p{
@@ -152,10 +183,41 @@ margin-bottom:12px;
 margin-bottom:15px;
 }
 
+.skill-badges{
+margin-top:20px;
+text-align:center;
+}
+
+.badge{
+display:inline-block;
+padding:8px 15px;
+margin:5px;
+background:#0f172a;
+border:1px solid #38bdf8;
+border-radius:20px;
+color:#38bdf8;
+transition:0.3s;
+}
+
+.badge:hover{
+background:#38bdf8;
+color:black;
+transform:translateY(-3px);
+}
+
 @media(max-width:768px){
 
+.navbar{
+flex-direction:column;
+gap:10px;
+}
+
+.nav-links a{
+margin:0 8px;
+}
+
 .hero h1{
-font-size:4rem;
+font-size:2.5rem;
 margin-bottom:10px;
 text-shadow:0 0 20px rgba(56,189,248,0.5);
 }
@@ -200,6 +262,17 @@ transform:translateY(0);
 
 <body>
 
+<nav class="navbar">
+    <div class="logo">Vishnu Pathak</div>
+
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
 <!-- HERO SECTION -->
 
 <section class="hero">
@@ -238,7 +311,7 @@ Resume
 
 <!-- ABOUT -->
 
-<section>
+<section id="about">
 
 <h2>About Me</h2>
 
@@ -266,7 +339,7 @@ Currently, I am focused on Java Full Stack Development, competitive programming,
 
 <!-- EDUCATION -->
 
-<section>
+<section id="education">
 
 <h2>Education</h2>
 
@@ -286,7 +359,7 @@ Currently, I am focused on Java Full Stack Development, competitive programming,
 
 <!-- TECHNICAL SKILLS -->
 
-<section>
+<section id="skills">
 
 <h2>Technical Skills</h2>
 
@@ -308,11 +381,26 @@ Currently, I am focused on Java Full Stack Development, competitive programming,
 
 </div>
 
+<div class="skill-badges">
+
+<span class="badge">Java</span>
+<span class="badge">Spring Boot</span>
+<span class="badge">React</span>
+<span class="badge">MongoDB</span>
+<span class="badge">PostgreSQL</span>
+<span class="badge">REST APIs</span>
+<span class="badge">DSA</span>
+<span class="badge">Git</span>
+<span class="badge">GitHub</span>
+<span class="badge">Python</span>
+
+</div>
+
 </section>
 
 <!-- PROJECTS -->
 
-<section>
+<section id="projects">
 
 <h2>Projects</h2>
 
@@ -424,7 +512,7 @@ View Project
 
 <!-- CONTACT -->
 
-<section>
+<section id="contact">
 
 <h2>Contact</h2>
 
@@ -471,7 +559,7 @@ leetcode.com/u/Vishnup2003
 <footer>
 
 <p>
-© 2026 Vishnu Shankar Pathak | Java Full Stack Developer | AIML Student
+© Vishnu Shankar Pathak | Java Full Stack Developer | AIML Student
 </p>
 
 </footer>
