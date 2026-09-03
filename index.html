@@ -3,9 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Vishnu Shankar Pathak | Portfolio</title>
 
 <style>
+
 *{
 margin:0;
 padding:0;
@@ -31,13 +33,15 @@ padding:20px;
 background:linear-gradient(135deg,#0f172a,#1e293b);
 }
 
-.hero img{
-width:220px;
-height:220px;
+.profile-pic{
+width:280px;
+height:280px;
 border-radius:50%;
 object-fit:cover;
+object-position:center 25%;
 border:5px solid #38bdf8;
-margin-bottom:20px;
+margin-bottom:25px;
+box-shadow:0 0 25px rgba(56,189,248,0.4);
 }
 
 .hero h1{
@@ -48,7 +52,7 @@ margin-bottom:10px;
 .hero p{
 font-size:1.4rem;
 color:#cbd5e1;
-margin-bottom:20px;
+margin-bottom:25px;
 }
 
 .btn{
@@ -64,22 +68,13 @@ transition:.3s;
 }
 
 .btn:hover{
-transform:scale(1.05);
+transform:translateY(-3px);
 }
 
 .container{
 max-width:1100px;
 margin:auto;
 padding:60px 25px;
-}
-
-.profile-pic{
-    width: 280px;
-    height: 280px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center 20%; /* image ko thoda niche shift karega */
-    border: 5px solid #7cc4ff;
 }
 
 section{
@@ -92,18 +87,13 @@ margin-bottom:20px;
 font-size:2rem;
 }
 
-.card{
+.card,
+.project{
 background:#1e293b;
 padding:25px;
 border-radius:12px;
 margin-bottom:20px;
-}
-
-.project{
-background:#1e293b;
-padding:20px;
-border-radius:12px;
-margin-bottom:20px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
 }
 
 .project h3{
@@ -129,22 +119,54 @@ color:#94a3b8;
 a{
 color:#38bdf8;
 }
+
+.skills-box p{
+margin-bottom:12px;
+}
+
+.contact-item{
+margin-bottom:15px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.5rem;
+}
+
+.hero p{
+font-size:1.1rem;
+}
+
+.profile-pic{
+width:220px;
+height:220px;
+}
+
+.btn{
+display:block;
+margin:10px auto;
+width:220px;
+}
+
+}
+
 </style>
 
 </head>
 
 <body>
 
-<!-- HERO -->
+<!-- HERO SECTION -->
 
 <section class="hero">
 
-<img src="Profile.jpg" alt="Vishnu Pathak" class="profile-pic">
+<img src="Profile.jpg" alt="Vishnu Shankar Pathak" class="profile-pic">
 
 <h1>Vishnu Shankar Pathak</h1>
 
 <p>
-Java Full Stack Developer | AIML Student | GATE CSE 2027 Aspirant
+Java Full Stack Developer | AIML Student | Spring Boot Developer
 </p>
 
 <div>
@@ -180,13 +202,19 @@ Resume
 <div class="card">
 
 <p>
-I am Vishnu Shankar Pathak, a B.Tech Computer Science (Artificial Intelligence & Machine Learning) student at ABES Engineering College, Ghaziabad.
+I am Vishnu Shankar Pathak, a B.Tech Computer Science & Engineering (Artificial Intelligence and Machine Learning) student at ABES Engineering College, Ghaziabad.
 </p>
 
 <br>
 
 <p>
-I am passionate about Java Development, Data Structures & Algorithms, Spring Boot, React, Machine Learning and Full Stack Development. I enjoy building real-world applications and continuously improving my problem-solving skills.
+I am passionate about Java Full Stack Development, Data Structures & Algorithms, Spring Boot, React, Machine Learning and Artificial Intelligence. I enjoy building scalable applications and solving real-world problems through software development.
+</p>
+
+<br>
+
+<p>
+Currently, I am focused on Java Full Stack Development, competitive programming, project building.
 </p>
 
 </div>
@@ -201,9 +229,11 @@ I am passionate about Java Development, Data Structures & Algorithms, Spring Boo
 
 <div class="card">
 
-<h3>B.Tech CSE (AIML)</h3>
+<h3>B.Tech Computer Science & Engineering (AIML)</h3>
 
 <p>ABES Engineering College, Ghaziabad</p>
+
+<p>Expected Graduation: 2027</p>
 
 <p>CGPA: 8.002</p>
 
@@ -211,21 +241,21 @@ I am passionate about Java Development, Data Structures & Algorithms, Spring Boo
 
 </section>
 
-<!-- SKILLS -->
+<!-- TECHNICAL SKILLS -->
 
-<section id="skills">
+<section>
 
 <h2>Technical Skills</h2>
 
-<div class="skills-box">
+<div class="card skills-box">
 
 <p><strong>Languages:</strong> Java, Python, C, JavaScript</p>
 
-<p><strong>Backend:</strong> Spring Boot, REST APIs, Flask, Spring Data JPA, Microservices</p>
+<p><strong>Backend:</strong> Spring Boot, REST APIs, Spring Data JPA, Flask, Microservices</p>
 
 <p><strong>Databases:</strong> MongoDB, PostgreSQL, MySQL</p>
 
-<p><strong>Core CS:</strong> OOP, Data Structures & Algorithms, DBMS, Operating Systems</p>
+<p><strong>Core CS:</strong> OOP, Data Structures & Algorithms, DBMS, Operating Systems, Computer Networks</p>
 
 <p><strong>Tools:</strong> Git, GitHub, Maven, IntelliJ IDEA, VS Code, Postman</p>
 
@@ -248,11 +278,23 @@ I am passionate about Java Development, Data Structures & Algorithms, Spring Boo
 <h3>Personal Finance & Expense Analyzer with AI</h3>
 
 <p>
-AI-powered expense management system developed using Spring Boot, React, MongoDB and Machine Learning.
+AI-powered personal finance management system developed using Spring Boot, React, MongoDB and Machine Learning.
 </p>
 
 <p>
-Features include expense categorization, smart purchase planner, monthly budget analysis and data visualization dashboard.
+Features include expense categorization, AI-based predictions, smart purchase planner, monthly budget analysis and interactive dashboards.
+</p>
+
+<p>
+<strong>Tech Stack:</strong>
+Spring Boot, React.js, MongoDB, Flask, Machine Learning, REST APIs
+</p>
+
+<p>
+<strong>GitHub:</strong>
+<a href="https://github.com/vishnup2003/Personal-Finance-Ai-Analyzer" target="_blank">
+View Project
+</a>
 </p>
 
 </div>
@@ -262,15 +304,27 @@ Features include expense categorization, smart purchase planner, monthly budget 
 <h3>Leaf Scan – Plant Disease Detection</h3>
 
 <p>
-CNN-based disease detection system developed using Python, TensorFlow, Keras and Streamlit.
+CNN-based plant disease classification system developed using Python, TensorFlow, Keras and Streamlit.
 </p>
 
 <p>
-Detects plant diseases from leaf images and provides instant predictions.
+Detects diseases from plant leaf images and provides instant predictions to assist users.
+</p>
+
+<p>
+<strong>Tech Stack:</strong>
+Python, TensorFlow, Keras, Streamlit, NumPy
+</p>
+
+<p>
+<strong>GitHub:</strong>
+<a href="https://github.com/vishnup2003/Leaf-Scan" target="_blank">
+View Project
+</a>
 </p>
 
 </div>
-
+    
 <div class="project">
 
 <h3>Train Tracker System</h3>
@@ -280,7 +334,19 @@ Real-time train tracking and information management application.
 </p>
 
 <p>
-Provides train information, route details and status tracking functionality.
+Provides train route details, train information and status tracking functionality.
+</p>
+
+<p>
+<strong>Tech Stack:</strong>
+Java, Spring Boot, REST APIs, HTML, CSS, JavaScript
+</p>
+
+<p>
+<strong>GitHub:</strong>
+<a href="https://github.com/vishnup2003/train-tracker-backend" target="_blank">
+View Project
+</a>
 </p>
 
 </div>
@@ -291,16 +357,22 @@ Provides train information, route details and status tracking functionality.
 
 <section>
 
-<h2>Achievements</h2>
+<h2>Achievements & Certifications</h2>
 
 <div class="card">
 
 <ul>
-<li>350+ DSA Problems Solved across LeetCode and GeeksforGeeks</li>
+
+<li>350+ Problems Solved on LeetCode and GeeksforGeeks</li>
+
 <li>AWS Cloud Practitioner Essentials</li>
-<li>AWS Academy Graduate: Introduction to Cloud</li>
-<li>Yuva AI for All – NASSCOM FutureSkills Prime</li>
+
+<li>AWS Academy Graduate - Introduction to Cloud</li>
+
+<li>Yuva AI for All - NASSCOM FutureSkills Prime</li>
+
 <li>Campus Ambassador – BECon'26 IIT Delhi</li>
+
 </ul>
 
 </div>
@@ -315,36 +387,37 @@ Provides train information, route details and status tracking functionality.
 
 <div class="card">
 
-<p>
+<div class="contact-item">
 📧 Email:
 <a href="mailto:vishnupathakndls@gmail.com">
 vishnupathakndls@gmail.com
 </a>
-</p>
+</div>
 
-<br>
-
-<p>
+<div class="contact-item">
 📍 Ghaziabad, Uttar Pradesh, India
-</p>
+</div>
 
-<br>
-
-<p>
+<div class="contact-item">
 💻 GitHub:
 <a href="https://github.com/vishnup2003" target="_blank">
 github.com/vishnup2003
 </a>
-</p>
+</div>
 
-<br>
-
-<p>
+<div class="contact-item">
 🔗 LinkedIn:
 <a href="https://www.linkedin.com/in/java-dsa-vishnu/" target="_blank">
 linkedin.com/in/java-dsa-vishnu
 </a>
-</p>
+</div>
+
+<div class="contact-item">
+🧩 LeetCode:
+<a href="https://leetcode.com/u/Vishnup2003/" target="_blank">
+leetcode.com/u/Vishnup2003
+</a>
+</div>
 
 </div>
 
@@ -355,7 +428,7 @@ linkedin.com/in/java-dsa-vishnu
 <footer>
 
 <p>
-© 2026 Vishnu Shankar Pathak | Java Full Stack Developer
+© 2026 Vishnu Shankar Pathak | Java Full Stack Developer | AIML Student
 </p>
 
 </footer>
