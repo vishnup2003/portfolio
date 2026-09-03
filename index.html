@@ -1,74 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Vishnu Shankar Pathak</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vishnu Shankar Pathak | Portfolio</title>
 
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
 body{
-    background:#0f172a;
-    color:white;
-    font-family:Arial,sans-serif;
-    margin:0;
-    padding:0;
+background:#0f172a;
+color:white;
+line-height:1.6;
 }
 
 .hero{
-    min-height:100vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    background:linear-gradient(135deg,#0f172a,#1e293b);
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(135deg,#0f172a,#1e293b);
 }
 
-img{
-    width:220px;
-    height:220px;
-    border-radius:50%;
-    object-fit:cover;
-    border:4px solid #38bdf8;
+.hero img{
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid #38bdf8;
+margin-bottom:20px;
 }
 
-h1{
-    font-size:4rem;
-    margin:20px 0 10px;
+.hero h1{
+font-size:4rem;
+margin-bottom:10px;
 }
 
-p{
-    font-size:1.2rem;
-    color:#cbd5e1;
+.hero p{
+font-size:1.4rem;
+color:#cbd5e1;
+margin-bottom:20px;
 }
 
 .btn{
-    display:inline-block;
-    margin-top:20px;
-    padding:12px 25px;
-    background:#38bdf8;
-    color:black;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
+display:inline-block;
+margin:8px;
+padding:12px 25px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:8px;
+transition:.3s;
 }
 
 .btn:hover{
-    background:#7dd3fc;
+transform:scale(1.05);
 }
 
-.content{
-    max-width:900px;
-    margin:auto;
-    padding:50px 20px;
+.container{
+max-width:1100px;
+margin:auto;
+padding:60px 25px;
 }
 
-.content h2{
-    color:#38bdf8;
-    margin-top:40px;
+section{
+margin-bottom:70px;
 }
 
-ul li{
-    margin:10px 0;
+h2{
+color:#60a5fa;
+margin-bottom:20px;
+font-size:2rem;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:12px;
+margin-bottom:20px;
+}
+
+.project{
+background:#1e293b;
+padding:20px;
+border-radius:12px;
+margin-bottom:20px;
+}
+
+.project h3{
+color:#38bdf8;
+margin-bottom:10px;
+}
+
+ul{
+padding-left:25px;
+}
+
+li{
+margin:10px 0;
+}
+
+footer{
+text-align:center;
+padding:25px;
+background:#111827;
+color:#94a3b8;
+}
+
+a{
+color:#38bdf8;
 }
 </style>
 
@@ -76,91 +126,236 @@ ul li{
 
 <body>
 
+<!-- HERO -->
+
 <section class="hero">
 
 <img src="Profile.jpg" alt="Vishnu Pathak">
 
 <h1>Vishnu Shankar Pathak</h1>
 
-<p>Java Full Stack Developer | AIML Student</p>
+<p>
+Java Full Stack Developer | AIML Student | GATE CSE 2027 Aspirant
+</p>
+
+<div>
 
 <a class="btn" href="https://github.com/vishnup2003" target="_blank">
 GitHub
 </a>
 
-<br><br>
-
 <a class="btn" href="https://www.linkedin.com/in/java-dsa-vishnu/" target="_blank">
 LinkedIn
 </a>
 
+<a class="btn" href="https://leetcode.com/u/Vishnup2003/" target="_blank">
+LeetCode
+</a>
+
+<a class="btn" href="Java Resume.pdf" target="_blank">
+Resume
+</a>
+
+</div>
+
 </section>
 
-<section class="content">
+<div class="container">
+
+<!-- ABOUT -->
+
+<section>
 
 <h2>About Me</h2>
 
+<div class="card">
+
 <p>
-I am Vishnu Shankar Pathak, a B.Tech Computer Science (AIML)
-student at ABES Engineering College, Ghaziabad.
-I am passionate about Java Development, Data Structures &
-Algorithms, Spring Boot, React and Artificial Intelligence.
+I am Vishnu Shankar Pathak, a B.Tech Computer Science (Artificial Intelligence & Machine Learning) student at ABES Engineering College, Ghaziabad.
 </p>
+
+<br>
+
+<p>
+I am passionate about Java Development, Data Structures & Algorithms, Spring Boot, React, Machine Learning and Full Stack Development. I enjoy building real-world applications and continuously improving my problem-solving skills.
+</p>
+
+</div>
+
+</section>
+
+<!-- EDUCATION -->
+
+<section>
 
 <h2>Education</h2>
 
-<p>
-B.Tech CSE (AIML)<br>
-ABES Engineering College, Ghaziabad<br>
-CGPA: 8.05
-</p>
+<div class="card">
 
-<h2>Skills</h2>
+<h3>B.Tech CSE (AIML)</h3>
+
+<p>ABES Engineering College, Ghaziabad</p>
+
+<p>CGPA: 8.05</p>
+
+<p>Expected Graduation: 2027</p>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section>
+
+<h2>Technical Skills</h2>
+
+<div class="card">
 
 <ul>
 <li>Java</li>
+<li>Data Structures & Algorithms</li>
 <li>Spring Boot</li>
 <li>React.js</li>
+<li>JavaScript</li>
+<li>HTML5</li>
+<li>CSS3</li>
 <li>MongoDB</li>
 <li>MySQL</li>
-<li>JavaScript</li>
-<li>Python</li>
+<li>REST APIs</li>
 <li>Git & GitHub</li>
-<li>Data Structures & Algorithms</li>
+<li>Python</li>
+<li>Machine Learning</li>
+<li>TensorFlow</li>
+<li>Flask</li>
 </ul>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section>
 
 <h2>Projects</h2>
 
+<div class="project">
+
+<h3>Personal Finance & Expense Analyzer with AI</h3>
+
+<p>
+AI-powered expense management system developed using Spring Boot, React, MongoDB and Machine Learning.
+</p>
+
+<p>
+Features include expense categorization, smart purchase planner, monthly budget analysis and data visualization dashboard.
+</p>
+
+</div>
+
+<div class="project">
+
+<h3>Leaf Scan – Plant Disease Detection</h3>
+
+<p>
+CNN-based disease detection system developed using Python, TensorFlow, Keras and Streamlit.
+</p>
+
+<p>
+Detects plant diseases from leaf images and provides instant predictions.
+</p>
+
+</div>
+
+<div class="project">
+
+<h3>Train Tracker System</h3>
+
+<p>
+Real-time train tracking and information management application.
+</p>
+
+<p>
+Provides train information, route details and status tracking functionality.
+</p>
+
+</div>
+
+</section>
+
+<!-- ACHIEVEMENTS -->
+
+<section>
+
+<h2>Achievements</h2>
+
+<div class="card">
+
 <ul>
-<li>
-<b>Personal Finance & Expense Analyzer with AI</b><br>
-AI-powered expense tracking system using Spring Boot,
-React, MongoDB and Machine Learning.
-</li>
-
-<li>
-<b>Leaf Scan - Plant Disease Detection</b><br>
-CNN-based plant disease classification system built
-using Python, TensorFlow and Streamlit.
-</li>
-
-<li>
-<b>Train Tracker System</b><br>
-Real-time train tracking and information management project.
-</li>
+<li>80+ Problems Solved on LeetCode</li>
+<li>Strong Foundation in DSA using Java</li>
+<li>Built Multiple AI & Full Stack Projects</li>
+<li>Active Technical Club Member</li>
+<li>Preparing for GATE CSE 2027</li>
 </ul>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section>
 
 <h2>Contact</h2>
 
+<div class="card">
+
 <p>
-📧 Email: vishnupathakndls@gmail.com
+📧 Email:
+<a href="mailto:vishnupathakndls@gmail.com">
+vishnupathakndls@gmail.com
+</a>
 </p>
+
+<br>
 
 <p>
 📍 Ghaziabad, Uttar Pradesh, India
 </p>
 
+<br>
+
+<p>
+💻 GitHub:
+<a href="https://github.com/vishnup2003" target="_blank">
+github.com/vishnup2003
+</a>
+</p>
+
+<br>
+
+<p>
+🔗 LinkedIn:
+<a href="https://www.linkedin.com/in/java-dsa-vishnu/" target="_blank">
+linkedin.com/in/java-dsa-vishnu
+</a>
+</p>
+
+</div>
+
 </section>
+
+</div>
+
+<footer>
+
+<p>
+© 2026 Vishnu Shankar Pathak | Java Full Stack Developer
+</p>
+
+</footer>
 
 </body>
 </html>
